@@ -165,10 +165,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]/equippedStatOffsets</xpath>
+		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]</xpath>
 		<value>
-			<MoveSpeed>0.5</MoveSpeed>
-			<Flammability>-0.25</Flammability>
+			<equippedStatOffsets>
+				<MoveSpeed>0.5</MoveSpeed>
+				<Flammability>-0.25</Flammability>
+			</equippedStatOffsets>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
