@@ -21,11 +21,9 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_ArmorReconPrestige"]</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorReconPrestige"]/statBases</xpath>
 		<value>
-			<statBases>
-			  <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
-			</statBases>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -167,12 +165,10 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]/equippedStatOffsets</xpath>
 		<value>
-			<equippedStatOffsets>
-				<MoveSpeed>0.5</MoveSpeed>
-				<Flammability>-0.25</Flammability>
-			</equippedStatOffsets>
+			<MoveSpeed>0.5</MoveSpeed>
+			<Flammability>-0.25</Flammability>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -210,11 +206,9 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]/statBases</xpath>
 		<value>
-			<statBases>
-			  <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
-			</statBases>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -227,6 +221,12 @@
 		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]/equippedStatOffsets</xpath>
+		<value>
+			<ToxicEnvironmentResistance>0.85</ToxicEnvironmentResistance>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -255,14 +255,6 @@
 		<value>
 			<equippedStatOffsets>
 				<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-			</equippedStatOffsets>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]</xpath>
-		<value>
-			<equippedStatOffsets>
-				<ToxicEnvironmentResistance>0.85</ToxicEnvironmentResistance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
